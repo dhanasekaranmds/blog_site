@@ -1,0 +1,216 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Publication - Blog Category Bootstrap Responsive Website Template - Home :: W3Layouts</title>
+
+    <style>
+    {% include 'assets/css/style-starter.css' %}
+
+  </style>
+
+</head>
+
+<body>
+<header id="site-header">
+	<div class="container">
+		<nav class="navbar navbar-expand-lg navbar-dark stroke p-0">
+			<h1> <a class="navbar-brand" href="index.html">
+					Publication
+				</a></h1>
+			<!-- if logo is image enable this   
+			<a class="navbar-brand" href="#index.html">
+					<img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+			</a> -->
+			<button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+				aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+				<span class="navbar-toggler-icon fa icon-close fa-times"></span>
+				</span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+				<ul class="navbar-nav mx-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item @@about-active">
+						<a class="nav-link" href="/registration">Registration</a>
+					</li>
+					<li class="nav-item @@contact-active">
+						<a class="nav-link" href="/login">Login</a>
+					</li>
+                    <li class="nav-item @@contact-active">
+						<a class="nav-link" href="/update">Update</a>
+					</li>
+                      <li class="nav-item @@contact-active">
+						<a class="nav-link" href="/view">View</a>
+					</li>
+                      <li class="nav-item @@contact-active">
+						<a class="nav-link" href="/delete">Delete</a>
+					</li>
+                    <li class="nav-item @@contact-active">
+						<a class="nav-link" href="/search">Search</a>
+					</li>
+				</ul>
+
+			<div class="mobile-position">
+				<nav class="navigation">
+					<div class="theme-switch-wrapper">
+						<label class="theme-switch" for="checkbox">
+							<input type="checkbox" id="checkbox">
+							<div class="mode-container">
+								<i class="gg-sun"></i>
+								<i class="gg-moon"></i>
+							</div>
+						</label>
+					</div>
+				</nav>
+			</div>
+		</nav>
+	</div>
+</header>
+
+
+
+<section class="w3l-main-slider position-relative" id="home">
+  <div class="companies20-content">
+    <div class="owl-one owl-carousel owl-theme">
+      <div class="item">
+        <li>
+          <div class="slider-info banner-view bg bg2">
+            <div class="banner-info">
+              <div class="container">
+                <div class="banner-info-bg text-center">
+                  <a href="#blog-single.html" class="blog_post_title">How to Make Cappuccino without a Machine</a>
+                  <ul class="author-date mb-4 d-flex align-items-center mt-4 justify-content-center">
+                    <li class="circle avatar"><img src="../static/assets/images/author1.jpg" alt=""></li>
+                    <li>by <a href="#author.html">John Michele</a></li>
+                    <li><span class="fa fa-clock-o" aria-hidden="true"></span> Mar 16, 2020</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </div>
+<!--
+<!-- -->
+      <div class="below-section">
+        <div class="container">
+          <div class="copyright-footer">
+            <div class="columns text-lg-left">
+              <p>&copy; 2020 Publication. All rights reserved </p>
+            </div>
+            <ul class="columns text-lg-right">
+              <li><a href="#privacy-policy.html">Privacy Policy</a>
+              </li>
+              <li><a href="about.html">About Us</a>
+              </li>
+              <li><a href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <button onclick="topFunction()" id="movetop" title="Go to top">
+        <span class="fa fa-arrow-up" aria-hidden="true"></span>
+      </button>
+      <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+          scrollFunction()
+        };
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("movetop").style.display = "block";
+          } else {
+            document.getElementById("movetop").style.display = "none";
+          }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+      </script>
+
+    </section>
+  </footer>
+
+  <script src="assets/js/jquery-1.9.1.min.js"></script>
+
+
+  <script src="assets/js/theme-change.js"></script>
+
+  <script src="assets/js/easyResponsiveTabs.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      //Horizontal Tab
+      $('#parentHorizontalTab').easyResponsiveTabs({
+        type: 'default', //Types: default, vertical, accordion
+        width: 'auto', //auto or any width like 600px
+        fit: true, // 100% fit in a container
+        tabidentify: 'hor_1', // The tab groups identifier
+        activate: function (event) { // Callback function if tab is switched
+          var $tab = $(this);
+          var $info = $('#nested-tabInfo');
+          var $name = $('span', $info);
+          $name.text($tab.text());
+          $info.show();
+        }
+      });
+    });
+  </script>
+  <script src="assets/js/owl.carousel.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.owl-one').owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: false,
+        responsiveClass: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplaySpeed: 1000,
+        autoplayHoverPause: false,
+        responsive: {
+          0: {
+            items: 1,
+            nav: false
+          },
+          480: {
+            items: 1,
+            nav: false
+          },
+          667: {
+            items: 1,
+            nav: true
+          },
+          1000: {
+            items: 1,
+            nav: true
+          }
+        }
+      })
+    })
+  </script>
+
+  <script>
+    $(function () {
+      $('.navbar-toggler').click(function () {
+        $('body').toggleClass('noscroll');
+      })
+    });
+  </script>
+
+ <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+
+  </html>
